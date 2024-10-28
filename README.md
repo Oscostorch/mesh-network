@@ -104,6 +104,25 @@ bash
 ./tcp_client1
 
     Each client will prompt for a username and password to authenticate with the server.
+    
+    Note: Use predefined usernames and passwords for authentication. These credentials are set in tcp_server/main.go:
+
+    Example credentials:
+        user1: pass1
+        user2: pass2
+        … (and so on, as defined in the tcp_server code)
+
+        To start a client, follow these steps:
+
+    Open a new terminal for each client you want to start.
+    Run the client with the command:
+
+    bash
+
+cd ../tcp_clientX # Replace 'X' with client number (e.g., tcp_client1)
+go run tcp_clientX.go
+
+When prompted, enter the username and password as defined in the TCP server.
 
 5. Sending and Receiving Messages
 
